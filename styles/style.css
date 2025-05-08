@@ -2,24 +2,23 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
+  padding: 95px 50px;
 }
-
 .header__menu {
-  padding: 135px 50px;
+  width: 100%;
 }
 
 .header__links-list {
   display: flex;
   gap: 32px;
+  list-style: circle;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .header__logo-image {
   width: 148px;
   height: 105px;
-}
-
-.header__links-list {
-  list-style: circle;
 }
 
 .header__links-list-item_no-bullit {
@@ -31,8 +30,14 @@
 }
 
 .address {
-  justify-self: end;
+  max-width: 265px;
+}
+
+.header__address {
+  font-size: 18px;
+  font-weight: normal;
   max-width: 240px;
+  justify-self: end;
 }
 
 .cover {
@@ -132,6 +137,10 @@
   background-color: #fff;
 }
 
+.lots {
+  margin-bottom: 120px;
+}
+
 .lots__heading {
   margin: 180px auto 27px 64px;
   font-weight: bold;
@@ -145,6 +154,7 @@
   margin-bottom: 30px;
   padding-left: 25px;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .lots__card-list-item {
@@ -173,8 +183,6 @@
 .card__text {
   z-index: 1;
   color: #fff;
-  font-weight: 400;
-  font-size: 20px;
 }
 
 .card_type_film {
@@ -211,6 +219,79 @@
 
 .lots__look-more-link {
   margin-left: 64px;
-  font-weight: 400px;
-  font-size: 20px;
+}
+
+.about {
+  display: grid;
+  width: 1052px;
+  height: 595px;
+  grid-template-columns: 334px auto;
+  padding-left: 47px;
+  margin-bottom: 180px;
+}
+
+.about__logo{
+  display: flex;
+  width: 240px;
+  height: 240px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: black;
+  place-self: start center;
+  margin-top: 35px;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about__column {
+  grid-column: 2/3;
+}
+
+.about__title {
+  margin-top: 136px;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.about__text {
+  margin-top: 100px;
+  margin-bottom: 24px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  height: 180px;
+  padding: 0 50px;
+}
+
+.footer_address {
+  justify-self: start;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+  justify-self: end;
+}
+
+.footer__social-list-item {
+  max-width: 48px;
+  max-height: 48px;
+
+}
+
+.footer__menu-list {
+  list-style: none;
+  text-align: center;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
 }
